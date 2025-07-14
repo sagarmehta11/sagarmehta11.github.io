@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Code, Palette, Rocket, Users } from 'lucide-react';
+import { Brain, Database, TrendingUp, Zap } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const About = () => {
@@ -25,24 +25,24 @@ const About = () => {
 
   const highlights = [
     {
-      icon: Code,
-      title: 'Clean Code',
-      description: 'Writing maintainable, scalable code with best practices'
+      icon: Brain,
+      title: 'Deep Learning',
+      description: 'Building neural networks that understand complex patterns and data'
     },
     {
-      icon: Palette,
-      title: 'Creative Design',
-      description: 'Crafting beautiful, user-centered digital experiences'
+      icon: Database,
+      title: 'Data Science',
+      description: 'Extracting insights from large datasets using statistical methods'
     },
     {
-      icon: Rocket,
-      title: 'Performance',
-      description: 'Building fast, optimized applications that deliver results'
+      icon: TrendingUp,
+      title: 'Model Optimization',
+      description: 'Fine-tuning algorithms for maximum performance and efficiency'
     },
     {
-      icon: Users,
-      title: 'Collaboration',
-      description: 'Working effectively with teams to achieve shared goals'
+      icon: Zap,
+      title: 'AI Innovation',
+      description: 'Developing cutting-edge solutions for real-world applications'
     }
   ];
 
@@ -54,8 +54,8 @@ const About = () => {
             About <span className="text-gradient">Me</span>
           </h2>
           <p className={`text-xl text-muted-foreground max-w-3xl mx-auto transition-all duration-1000 delay-200 ${inView ? 'animate-fade-in-up' : ''}`}>
-            I'm a passionate developer with 5+ years of experience creating digital solutions 
-            that combine technical excellence with thoughtful design.
+            I'm a passionate ML engineer with 4+ years of experience developing intelligent systems 
+            that push the boundaries of what's possible with artificial intelligence.
           </p>
         </div>
 
@@ -63,21 +63,21 @@ const About = () => {
           {/* Left Column - Text Content */}
           <div className={`space-y-6 transition-all duration-1000 delay-400 ${inView ? 'animate-fade-in-left' : ''}`}>
             <h3 className="text-2xl font-semibold mb-4">
-              Building the future, one line of code at a time
+              Transforming data into intelligent insights
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              My journey in tech started with a curiosity about how things work under the hood. 
-              Today, I specialize in creating full-stack applications using modern technologies 
-              like React, Node.js, and cloud platforms.
+              My journey in machine learning began with a fascination for how computers can learn 
+              from data. Today, I specialize in developing deep learning models, computer vision 
+              systems, and NLP applications using frameworks like TensorFlow, PyTorch, and scikit-learn.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              I believe that great software is not just about functionality—it's about creating 
-              experiences that users love. Every project I work on is an opportunity to solve 
-              real problems and make a positive impact.
+              I believe that AI should be accessible, ethical, and beneficial to society. Every model 
+              I build is designed with interpretability and fairness in mind, ensuring that AI solutions 
+              are not just powerful, but also responsible and trustworthy.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, contributing to 
-              open source projects, or sharing knowledge with the developer community.
+              When I'm not training models, you'll find me contributing to open-source ML projects, 
+              publishing research papers, or mentoring aspiring data scientists in the community.
             </p>
           </div>
 
@@ -104,10 +104,10 @@ const About = () => {
         {/* Stats Section */}
         <div className={`mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 transition-all duration-1000 delay-1000 ${inView ? 'animate-fade-in-up' : ''}`}>
           {[
-            { number: '50+', label: 'Projects Completed' },
-            { number: '5+', label: 'Years Experience' },
-            { number: '20+', label: 'Happy Clients' },
-            { number: '100%', label: 'Dedication' }
+            { number: '100+', label: 'Models Deployed' },
+            { number: '4+', label: 'Years Experience' },
+            { number: '15+', label: 'Research Papers' },
+            { number: '99%', label: 'Model Accuracy' }
           ].map((stat, index) => (
             <div key={stat.label} className="text-center">
               <div className="text-3xl font-bold text-gradient mb-2">{stat.number}</div>

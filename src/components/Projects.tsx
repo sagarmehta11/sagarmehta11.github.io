@@ -27,55 +27,55 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.',
+      title: 'AI-Powered Medical Diagnosis',
+      description: 'A deep learning system for early detection of skin cancer using convolutional neural networks and transfer learning.',
+      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop',
+      technologies: ['PyTorch', 'Computer Vision', 'Flask', 'React', 'AWS'],
+      githubUrl: '#',
+      liveUrl: '#',
+      featured: true
+    },
+    {
+      title: 'NLP Sentiment Analyzer',
+      description: 'Real-time sentiment analysis of social media posts using BERT transformers and streaming data processing.',
+      image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop',
+      technologies: ['Transformers', 'BERT', 'Apache Kafka', 'MongoDB', 'Docker'],
+      githubUrl: '#',
+      liveUrl: '#',
+      featured: false
+    },
+    {
+      title: 'Predictive Analytics Dashboard',
+      description: 'Machine learning dashboard for forecasting sales trends using time series analysis and ensemble methods.',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+      technologies: ['Time Series', 'XGBoost', 'Plotly', 'FastAPI', 'PostgreSQL'],
+      githubUrl: '#',
+      liveUrl: '#',
+      featured: false
+    },
+    {
+      title: 'Computer Vision Pipeline',
+      description: 'End-to-end object detection and tracking system for autonomous vehicles using YOLO and Kalman filters.',
+      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
+      technologies: ['YOLO', 'OpenCV', 'TensorFlow', 'ROS', 'CUDA'],
+      githubUrl: '#',
+      liveUrl: '#',
+      featured: true
+    },
+    {
+      title: 'Recommendation Engine',
+      description: 'Collaborative filtering system for e-commerce product recommendations using matrix factorization and deep learning.',
       image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'AWS'],
-      githubUrl: '#',
-      liveUrl: '#',
-      featured: true
-    },
-    {
-      title: 'Task Management App',
-      description: 'A collaborative task management tool with real-time updates, team collaboration, and progress tracking.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
-      technologies: ['Vue.js', 'Firebase', 'Tailwind CSS', 'Socket.io'],
+      technologies: ['Collaborative Filtering', 'Neural Networks', 'Spark', 'Redis', 'Kubernetes'],
       githubUrl: '#',
       liveUrl: '#',
       featured: false
     },
     {
-      title: 'Weather Dashboard',
-      description: 'A beautiful weather application with location-based forecasts, interactive maps, and weather alerts.',
-      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop',
-      technologies: ['React', 'OpenWeather API', 'Chart.js', 'Mapbox'],
-      githubUrl: '#',
-      liveUrl: '#',
-      featured: false
-    },
-    {
-      title: 'Social Media Analytics',
-      description: 'A comprehensive analytics dashboard for social media performance with real-time data visualization.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
-      technologies: ['Next.js', 'D3.js', 'MongoDB', 'Express.js'],
-      githubUrl: '#',
-      liveUrl: '#',
-      featured: true
-    },
-    {
-      title: 'Portfolio Website',
-      description: 'A responsive portfolio website with smooth animations, dark mode, and optimized performance.',
-      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-      githubUrl: '#',
-      liveUrl: '#',
-      featured: false
-    },
-    {
-      title: 'AI Chat Application',
-      description: 'An intelligent chatbot application with natural language processing and conversation history.',
-      image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&h=400&fit=crop',
-      technologies: ['Python', 'FastAPI', 'OpenAI API', 'React', 'WebSockets'],
+      title: 'Reinforcement Learning Game AI',
+      description: 'Deep Q-Network agent that learns to play complex strategy games through self-play and reward optimization.',
+      image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&h=400&fit=crop',
+      technologies: ['Deep Q-Learning', 'OpenAI Gym', 'PyTorch', 'Unity ML-Agents', 'TensorBoard'],
       githubUrl: '#',
       liveUrl: '#',
       featured: true
@@ -90,7 +90,7 @@ const Projects = () => {
             Featured <span className="text-gradient">Projects</span>
           </h2>
           <p className={`text-xl text-muted-foreground max-w-3xl mx-auto transition-all duration-1000 delay-200 ${inView ? 'animate-fade-in-up' : ''}`}>
-            A showcase of my recent work, demonstrating expertise across different technologies and domains
+            A showcase of my recent ML projects, demonstrating expertise across computer vision, NLP, and predictive analytics
           </p>
         </div>
 
@@ -140,7 +140,7 @@ const Projects = () => {
                     onClick={() => window.open(project.liveUrl, '_blank')}
                   >
                     <ExternalLink className="h-4 w-4 mr-2" />
-                    Live Demo
+                    View Demo
                   </Button>
                   <Button
                     size="sm"
@@ -163,7 +163,7 @@ const Projects = () => {
             variant="outline" 
             className="glass hover-glow hover-lift px-8 py-3"
           >
-            View All Projects
+            View All Research
           </Button>
         </div>
       </div>

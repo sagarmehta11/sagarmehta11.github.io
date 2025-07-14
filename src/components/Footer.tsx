@@ -7,7 +7,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: Github, href: '#', label: 'GitHub' },
     { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:john.doe@example.com', label: 'Email' }
+    { icon: Mail, href: 'mailto:alex.chen@example.com', label: 'Email' }
   ];
 
   const scrollToTop = () => {
@@ -24,10 +24,10 @@ const Footer = () => {
               onClick={scrollToTop}
               className="text-2xl font-bold text-gradient hover:scale-105 transition-transform mb-2 block"
             >
-              Portfolio
+              ML Portfolio
             </button>
             <p className="text-muted-foreground text-sm">
-              © {currentYear} John Doe. All rights reserved.
+              © {currentYear} Alex Chen. All rights reserved.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ const Footer = () => {
           <div className="flex items-center text-sm text-muted-foreground">
             Made with 
             <Heart className="h-4 w-4 mx-1 text-red-500 animate-pulse" />
-            and lots of coffee
+            and lots of GPU power
           </div>
         </div>
 

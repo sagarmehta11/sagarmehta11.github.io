@@ -42,20 +42,20 @@ const Hero = () => {
         <div className={`transition-all duration-1000 ${mounted ? 'animate-fade-in-up' : ''}`}>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
             Hi, I'm{' '}
-            <span className="text-gradient">John Doe</span>
+            <span className="text-gradient">Alex Chen</span>
           </h1>
         </div>
         
         <div className={`transition-all duration-1000 delay-300 ${mounted ? 'animate-fade-in-up' : ''}`}>
           <p className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-8">
-            Full Stack Developer & UI/UX Designer
+            Machine Learning Engineer & AI Researcher
           </p>
         </div>
         
         <div className={`transition-all duration-1000 delay-500 ${mounted ? 'animate-fade-in-up' : ''}`}>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-            I create exceptional digital experiences through clean code and thoughtful design. 
-            Passionate about building innovative solutions that make a difference.
+            I build intelligent systems that learn and adapt. Specializing in deep learning, 
+            computer vision, and NLP to solve real-world problems with cutting-edge AI.
           </p>
         </div>
 
@@ -66,14 +66,14 @@ const Hero = () => {
             className="gradient-primary hover-glow hover-lift text-lg px-8 py-3"
             onClick={() => scrollToAbout()}
           >
-            View My Work
+            View My Research
           </Button>
           <Button 
             size="lg" 
             variant="outline" 
             className="glass hover-glow hover-lift text-lg px-8 py-3"
           >
-            Download CV
+            Download Resume
           </Button>
         </div>
 

@@ -25,23 +25,23 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      title: 'Frontend Development',
-      skills: ['React', 'TypeScript', 'Next.js', 'Vue.js', 'Tailwind CSS', 'Sass', 'HTML5', 'CSS3'],
+      title: 'Machine Learning',
+      skills: ['Python', 'TensorFlow', 'PyTorch', 'Scikit-learn', 'Keras', 'XGBoost', 'MLflow', 'Weights & Biases'],
       color: 'from-blue-500 to-purple-600'
     },
     {
-      title: 'Backend Development',
-      skills: ['Node.js', 'Python', 'Express.js', 'Django', 'PostgreSQL', 'MongoDB', 'REST APIs', 'GraphQL'],
+      title: 'Deep Learning & AI',
+      skills: ['Computer Vision', 'NLP', 'CNNs', 'RNNs', 'Transformers', 'GANs', 'Reinforcement Learning', 'BERT'],
       color: 'from-green-500 to-teal-600'
     },
     {
-      title: 'Tools & Technologies',
-      skills: ['Git', 'Docker', 'AWS', 'Vercel', 'Figma', 'VS Code', 'Linux', 'Jest'],
+      title: 'Data & Cloud',
+      skills: ['SQL', 'MongoDB', 'Apache Spark', 'Kafka', 'AWS', 'Docker', 'Kubernetes', 'Airflow'],
       color: 'from-orange-500 to-red-600'
     },
     {
-      title: 'Soft Skills',
-      skills: ['Problem Solving', 'Team Leadership', 'Communication', 'Project Management', 'Agile', 'Mentoring'],
+      title: 'Research & Analytics',
+      skills: ['Statistical Analysis', 'A/B Testing', 'Data Visualization', 'Research Design', 'Paper Writing', 'Jupyter'],
       color: 'from-purple-500 to-pink-600'
     }
   ];
@@ -95,10 +95,10 @@ const Skills = () => {
           <h3 className="text-2xl font-semibold text-center mb-8">Core Proficiencies</h3>
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {[
-              { skill: 'Frontend Development', level: 95 },
-              { skill: 'Backend Development', level: 88 },
-              { skill: 'UI/UX Design', level: 82 },
-              { skill: 'Project Management', level: 90 }
+              { skill: 'Machine Learning', level: 95 },
+              { skill: 'Deep Learning', level: 90 },
+              { skill: 'Data Science', level: 88 },
+              { skill: 'Research & Development', level: 92 }
             ].map((item, index) => (
               <div key={item.skill} className="space-y-2">
                 <div className="flex justify-between text-sm">

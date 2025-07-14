@@ -62,19 +62,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'john.doe@example.com',
-      href: 'mailto:john.doe@example.com'
+      value: 'alex.chen@example.com',
+      href: 'mailto:alex.chen@example.com'
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+1 (555) 987-6543',
+      href: 'tel:+15559876543'
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Seattle, WA',
       href: '#'
     }
   ];
@@ -87,7 +87,7 @@ const Contact = () => {
             Get In <span className="text-gradient">Touch</span>
           </h2>
           <p className={`text-xl text-muted-foreground max-w-3xl mx-auto transition-all duration-1000 delay-200 ${inView ? 'animate-fade-in-up' : ''}`}>
-            Ready to bring your ideas to life? Let's discuss your next project and create something amazing together.
+            Interested in collaborating on ML research or building intelligent systems? Let's discuss how we can push the boundaries of AI together.
           </p>
         </div>
 
@@ -97,8 +97,8 @@ const Contact = () => {
             <div className={`transition-all duration-1000 delay-400 ${inView ? 'animate-fade-in-left' : ''}`}>
               <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                I'm always excited to discuss new opportunities, interesting projects, 
-                or just chat about technology and design. Don't hesitate to reach out!
+                I'm always excited to discuss new research opportunities, innovative ML projects, 
+                or collaborate on pushing the boundaries of artificial intelligence. Let's connect!
               </p>
             </div>
 
@@ -200,7 +200,7 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleInputChange}
                       className="glass border-border/50 focus:border-primary resize-none"
-                      placeholder="Tell me about your project or idea..."
+                      placeholder="Tell me about your ML project or research idea..."
                     />
                   </div>
 
