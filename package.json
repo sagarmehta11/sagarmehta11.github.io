@@ -2,7 +2,7 @@
   "name": "vite_react_shadcn_ts",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://sagarmehta11.github.io/sagarmehta11.github.io/",
+  "homepage": "https://sagarmehta11.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
