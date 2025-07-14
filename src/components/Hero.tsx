@@ -42,7 +42,7 @@ const Hero = () => {
         <div className={`transition-all duration-1000 ${mounted ? 'animate-fade-in-up' : ''}`}>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
             Hi, I'm{' '}
-            <span className="text-gradient">Alex Chen</span>
+            <span className="text-gradient">Sagar Mehta</span>
           </h1>
         </div>
         

@@ -27,7 +27,7 @@ const Footer = () => {
               ML Portfolio
             </button>
             <p className="text-muted-foreground text-sm">
-              © {currentYear} Alex Chen. All rights reserved.
+              © {currentYear} Sagar Mehta. All rights reserved.
             </p>
           </div>
 
