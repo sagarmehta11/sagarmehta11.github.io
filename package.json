@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://sagarmehta11.github.io",
+  "homepage": "https://sagarmehta11.github.io/sagarmehta11.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
