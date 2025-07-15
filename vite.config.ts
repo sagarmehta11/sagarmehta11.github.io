@@ -4,9 +4,9 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-// export default defineConfig(({ mode }) => ({
+export default defineConfig(({ mode }) => ({
 //   base: mode === 'production' ? '/vite_react_shadcn_ts/' : '/',
-export default defineConfig({
+// export default defineConfig({
   base: '/sagarmehta11.github.io/',
   server: {
     host: "::",
