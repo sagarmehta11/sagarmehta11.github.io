@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [inView, setInView] = useState(false);
@@ -46,35 +47,44 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    try {
+      await emailjs.send(
+        'YOUR_SERVICE_ID',
+        'YOUR_TEMPLATE_ID',
+        formData,
+        'YOUR_USER_ID'
+      );
 
-    toast({
-      title: "Message sent successfully!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
+      toast({
+        title: "Message sent successfully!",
+        description: "Thank you for reaching out. I'll get back to you soon.",
+      });
 
-    setFormData({ name: '', email: '', subject: '', message: '' });
-    setIsSubmitting(false);
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    } catch (error) {
+      console.error('Failed to send message:', error);
+      toast({
+        title: "Uh oh! Something went wrong.",
+        description: "There was a problem with your request.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
     {
       icon: Mail,
       title: 'Email',
-      value: 'alex.chen@example.com',
-      href: 'mailto:alex.chen@example.com'
+      value: 'sagarmeht4@gmail.com',
+      href: 'mailto:sagarmeht4@gmail.com'
     },
-    {
-      icon: Phone,
-      title: 'Phone',
-      value: '+1 (555) 987-6543',
-      href: 'tel:+15559876543'
-    },
+
     {
       icon: MapPin,
       title: 'Location',
-      value: 'Seattle, WA',
+      value: 'Delhi, India',
       href: '#'
     }
   ];

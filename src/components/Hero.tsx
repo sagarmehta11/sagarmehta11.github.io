@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-bg.jpg';
 
@@ -48,14 +48,14 @@ const Hero = () => {
         
         <div className={`transition-all duration-1000 delay-300 ${mounted ? 'animate-fade-in-up' : ''}`}>
           <p className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-8">
-            Machine Learning Engineer & AI Researcher
+            Machine Learning Engineer
           </p>
         </div>
         
         <div className={`transition-all duration-1000 delay-500 ${mounted ? 'animate-fade-in-up' : ''}`}>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-            I build intelligent systems that learn and adapt. Specializing in deep learning, 
-            computer vision, and NLP to solve real-world problems with cutting-edge AI.
+            I build intelligent systems that learn and adapt. Specializing in Deep Learning, 
+            Computer Vision, NLP and Gen AI to solve real-world problems with cutting-edge AI.
           </p>
         </div>
 
@@ -66,7 +66,7 @@ const Hero = () => {
             className="gradient-primary hover-glow hover-lift text-lg px-8 py-3"
             onClick={() => scrollToAbout()}
           >
-            View My Research
+            About Me
           </Button>
           <Button 
             size="lg" 
@@ -83,6 +83,7 @@ const Hero = () => {
             variant="ghost"
             size="sm"
             className="glass hover-glow hover-scale p-3 rounded-full"
+            onClick={() => window.open('https://github.com/sagarmehta11', '_blank')}
           >
             <Github className="h-6 w-6" />
           </Button>
@@ -90,6 +91,7 @@ const Hero = () => {
             variant="ghost"
             size="sm"
             className="glass hover-glow hover-scale p-3 rounded-full"
+            onClick={() => window.open('https://www.linkedin.com/in/sagarmehta11/', '_blank')}
           >
             <Linkedin className="h-6 w-6" />
           </Button>
@@ -97,6 +99,15 @@ const Hero = () => {
             variant="ghost"
             size="sm"
             className="glass hover-glow hover-scale p-3 rounded-full"
+            onClick={() => window.open('https://x.com/sagarmehta_1', '_blank')}
+          >
+            <Twitter className="h-6 w-6" />
+          </Button>
+          <Button
+            variant="ghost"
+            size="sm"
+            className="glass hover-glow hover-scale p-3 rounded-full"
+            onClick={() => window.open('mailto:sagarmeht4@gmail.com', '_blank')}
           >
             <Mail className="h-6 w-6" />
           </Button>

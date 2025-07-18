@@ -54,7 +54,7 @@ const About = () => {
             About <span className="text-gradient">Me</span>
           </h2>
           <p className={`text-xl text-muted-foreground max-w-3xl mx-auto transition-all duration-1000 delay-200 ${inView ? 'animate-fade-in-up' : ''}`}>
-            I'm a passionate ML engineer with 4+ years of experience developing intelligent systems 
+            I'm a passionate ML engineer with 2+ years of experience developing intelligent systems 
             that push the boundaries of what's possible with artificial intelligence.
           </p>
         </div>
@@ -105,7 +105,7 @@ const About = () => {
         <div className={`mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 transition-all duration-1000 delay-1000 ${inView ? 'animate-fade-in-up' : ''}`}>
           {[
             { number: '100+', label: 'Models Deployed' },
-            { number: '4+', label: 'Years Experience' },
+            { number: '2+', label: 'Years Experience' },
             { number: '15+', label: 'Research Papers' },
             { number: '99%', label: 'Model Accuracy' }
           ].map((stat, index) => (

@@ -43,7 +43,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="text-2xl font-bold text-gradient">
-            ML Portfolio
+            <img src="src\assets\logo2.png" alt="Sagar Mehta" className="h-8 w-8 inline-block mr-2" />
           </div>
 
           {/* Desktop Navigation */}

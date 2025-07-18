@@ -1,13 +1,16 @@
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart, Twitter} from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import XLogo from '@/assets/x_logo.svg';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:alex.chen@example.com', label: 'Email' }
+    { icon: Github, href: 'https://github.com/sagarmehta11', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/sagarmehta11/', label: 'LinkedIn' },
+    // { icon: XLogo, href: 'https://x.com/sagarmehta_1', label: 'X', isImg: true },
+    { icon: Twitter, href: 'https://x.com/sagarmehta_1', label: 'X'},
+    { icon: Mail, href: 'mailto:sagarmeht4@gmail.com', label: 'Email' }
   ];
 
   const scrollToTop = () => {
@@ -24,7 +27,8 @@ const Footer = () => {
               onClick={scrollToTop}
               className="text-2xl font-bold text-gradient hover:scale-105 transition-transform mb-2 block"
             >
-              ML Portfolio
+              Sagar Mehta
+
             </button>
             <p className="text-muted-foreground text-sm">
               © {currentYear} Sagar Mehta. All rights reserved.
@@ -42,7 +46,7 @@ const Footer = () => {
                 onClick={() => window.open(social.href, '_blank')}
                 aria-label={social.label}
               >
-                <social.icon className="h-5 w-5" />
+                {social.isImg ? <img src={social.icon} className="h-5 w-5" /> : <social.icon className="h-5 w-5" />}
               </Button>
             ))}
           </div>
