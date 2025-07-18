@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/',
+  base: '/sagarmehta11.github.io',
   server: {
     host: "::",
     port: 8080,
