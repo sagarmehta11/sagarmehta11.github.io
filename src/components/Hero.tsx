@@ -39,7 +39,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`transition-all duration-1000 ${mounted ? 'animate-fade-in-up' : ''}`}>
+        <div className={`transition-all duration-1000 ${mounted ? 'animate-fade-in-up' : ''} pt-20`}>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
             Hi, I'm{' '}
             <span className="text-gradient">Sagar Mehta</span>
