@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/components/ThemeProvider';
+import logo from '@/assets/logo2.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +44,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="text-2xl font-bold text-gradient">
-            <img src="src\assets\logo2.png" alt="Sagar Mehta" className="h-8 w-8 inline-block mr-2" />
+            <img src={logo} alt="Sagar Mehta" className="h-8 w-8 inline-block mr-2" />
           </div>
 
           {/* Desktop Navigation */}
